@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    scrollbar-color: black white;
+    scrollbar-width: thin;
+}
+
+section {
+    background-color: #f0efef;
+}
+
+.section-1 {
+    background-image: linear-gradient(to bottom, #d9d9d9, #f0efef);
+}
+
+header {
+    background-image: url(assets/hero-section.webp);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media  (max-width:920px){
+    header{
+        background-image: none;
+        background-color: #f0efef;
+    }
+    .section-1 {
+        background-image: none;
+        background-color: #f0efef;
+    }
+}
+
+header .container .row .header {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+}
+
+header .container .row span button ,.section-4 a button{
+    transition: all 0.2s ease-in-out;
+}
+
+header .container .row span button:hover ,.section-4 a button:hover {
+    transform: scale(105%);
+}
+
+.carousel-item img , .carousel{
+    border-radius: 2rem;
+}
+.col-12,
+.col-md-5 {
+    overflow: hidden;
+    border-radius: 3rem;
+}
+
+section .container .row .boxes img {
+    aspect-ratio: 6/7;
+    transition: all 0.2s ease-in-out;
+}
+
+.huge-text {
+    font-size: 168px;
+    line-height: 85%;
+}
+
+@media (max-width:760px) {
+    .huge-text {
+        font-size: 120px;
+    }
+}
+
+@media (max-width:460px) {
+    .huge-text {
+        font-size: 90px;
+    }
+}
+
+.section-4 {
+    background-color: #e8e7e7;
+    overflow: hidden
+}
+
+section .container .row .boxes img:hover {
+    transform: scale(103%);
+}
+
+section .container .row .pack .column li {
+    list-style-image: url(assets/list.svg);
+    margin-bottom: 0.25rem;
+}
